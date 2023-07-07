@@ -1,0 +1,32 @@
+.btn2{
+  font-size: 20px;
+    border: none;
+    outline: none;
+    background: #08f7db;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 90px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.btn2:hover{
+  background-color: #045f54;
+}
+
+.icon{
+  font-size: 30px;
+  color: #fff;
+  margin-left: -165px;
+  padding-top: 2px;
+}
+
+.icon:hover{
+  color: #08f7db;
+}
+
+input{
+  border: 1px solid #08f7db;
+}

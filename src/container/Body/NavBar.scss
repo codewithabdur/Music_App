@@ -1,0 +1,156 @@
+::-webkit-scrollbar{
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+
+  .left {
+    img {
+      width: 10rem;
+      margin-top: 2.1rem;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: rotate(360deg);
+    }
+  }
+
+  .right {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding-right: 2px;
+    padding-left: 2px;
+    position: relative;
+    width: 50vw;
+  }
+
+  .profile {
+    width: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .notify{
+    align-self: center;
+  }
+
+  .notification {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .scroll-notify{
+    overflow-y: scroll;
+    height: 40vh;
+    position: absolute;
+    width: 10vw;
+    z-index: 999;
+    display: none;
+    // border: none;
+  }
+
+  .notify-item{
+    display: flex;
+    justify-content: space-between;
+    img{
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    p{
+      color: #fff;
+      text-transform: lowercase;
+      font-size: x-small;
+      margin-block: 10px;
+    }
+  }
+  form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    padding-left: 2px;
+    width: 450px;
+  }
+
+  input[type="text"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 10px;
+    font-size: 14px;
+    color: #1183d6;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
+
+  input[type="text"]::placeholder {
+    color: #5b4673;
+  }
+
+  button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent
+      url("../../images/search.png")
+      no-repeat center;
+      background-size: contain;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  button[type="submit"]:hover {
+    opacity: 1;
+  }
+
+  button[type="submit"]:focus,
+  input[type="text"]:focus {
+    box-shadow: 0 0 3px 0 cyan;
+    // border-color: #1183d6;
+    border-color: cyan;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .nav .notification {
+    font-size: 20px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+}
+
+
+@media only screen and (max-width:310px ){
+
+  
+   .nav .profile{
+      width: 35px;
+    }
+
+}

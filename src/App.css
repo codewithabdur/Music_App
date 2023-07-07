@@ -1,0 +1,13 @@
+body{
+  width: 80%;
+  margin: auto;
+  background: linear-gradient(130deg, #29053b, #033837);
+}
+
+::selection{
+  background-color: #5f0480;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
